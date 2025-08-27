@@ -1,13 +1,7 @@
-"use strict";
+'use strict';
 
 function filterArray(numbers, value) {
-  let arr = [];
-  for (const val of numbers) {
-    if (val > value) {
-      arr.push(val);
-    }
-  }
-  return arr;
+  return numbers.filter(number => number > value);
 }
 
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
